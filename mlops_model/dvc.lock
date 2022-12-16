@@ -13,3 +13,19 @@ stages:
     - path: data/raw/churn_data.csv
       md5: 9b61c38a459d36244dbf8e6940236371
       size: 116146
+  split-data:
+    cmd: python src/data/split_data.py --config=params.yaml
+    deps:
+    - path: data/raw/churn_data.csv
+      md5: 9b61c38a459d36244dbf8e6940236371
+      size: 116146
+    - path: src/data/split_data.py
+      md5: c600ef635496cabf82d30dc1242ca71b
+      size: 1564
+    outs:
+    - path: data/processed/churn_test.csv
+      md5: c3a4965f71511e72d4af9ac650f47505
+      size: 23358
+    - path: data/processed/churn_train.csv
+      md5: 8358e3ab11f8301c58d3b0e5aa99a6fd
+      size: 92916

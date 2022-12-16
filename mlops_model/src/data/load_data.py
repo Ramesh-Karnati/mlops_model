@@ -12,6 +12,7 @@ def read_params(config_path):
         config=yaml.safe_load(yaml_file)
     return config
 
+
 def load_data(data_path,selected_features):
     """
     load csv data from given path

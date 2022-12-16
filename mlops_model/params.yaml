@@ -9,5 +9,5 @@ raw_data_config:
   random_state: 111
 
 processed_data_config:
-  train_data_csv: data/processed/processed_churn_train.csv
-  test_data_csv: data/processed/processed_churn_test.csv
+  train_data_csv: data/processed/churn_train.csv
+  test_data_csv: data/processed/churn_test.csv
